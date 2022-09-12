@@ -12,5 +12,14 @@
             localStorage.setItem(jVarLocalUUID, inData);
             return jVarLocalUUID;
         };
+        
+        
+        static jFInsertToLocalStorageFromGlobal = () => {
+            let jVarLocalUUID = this.jFCreateuuid();
+            localStorage.setItem(jVarLocalUUID, jvar);
+            return jVarLocalUUID;
+        };
+        
+        
     };
 </script>
